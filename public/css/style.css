@@ -5,4 +5,13 @@ h1 {
     text-align: center;
     color: cornflowerblue;
   }
+
+  #img-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #restaurant-img {
+    height: 200px;
+  }
   

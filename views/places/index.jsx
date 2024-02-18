@@ -10,7 +10,9 @@ function index (data) {
         <p className="text-center">
           {place.cuisines}
         </p>
-        <img src={place.pic} alt={place.name} style={{width: '300px'}} />
+        <div id='img-container'>
+        <img id='restaurant-img' src={place.pic} alt={place.name} style={{width: '300px'}} />
+        </div>
         <p className="text-center">
           Located in {place.city}, {place.state}
         </p>
