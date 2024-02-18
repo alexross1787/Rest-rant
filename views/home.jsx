@@ -6,8 +6,10 @@ function home () {
         <Def>
             <main>
                 <h1>REST-Rant</h1>
-                <div>
+                <div id='home'>
+                    <div id='img-container'>
                     <img src="/images/bigBurger.jpg" alt="Big Burger"  style={{ width: '50%'}} />
+                    </div>
                     <div> Photo by <a href="https://unsplash.com/@picoftasty">Mae Mu</a> on <a href="https://unsplash.com/"></a>
 
                     </div>
