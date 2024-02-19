@@ -23,7 +23,8 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-  res.send('hey')
+  console.log(req.body)
+  res.send('POST /places')
 
 })
 
