@@ -1,12 +1,16 @@
 const router = require('express').Router()
 const places = require('../models/places.js')
 
-router.get('/new', (req, res) => {
-  res.render('places/new')
-})
 
+
+// Get List of Places
 router.get('/', (req, res) => {
      res.render('places/index', {places})
+})
+
+// Get Detailed View of a Place
+router.get('/new', (req, res) => {
+  res.render('places/new')
 })
 
 router.get('/:id', (req, res) => {
@@ -18,7 +22,7 @@ router.get('/:id', (req, res) => {
     res.render('error404')
   }
   else {
-    res.render('places/show', { place: places[id] })
+    res.render('places/show', { place: places[id], id })
 
   }
 })
