@@ -5,6 +5,7 @@ const states = require('D:/UNLV/BE/Rest-rant/models/states.js');
 function new_form () {
     return (
         <Def>
+          <div className="container">
           <main>
             <h1>Add a New Place</h1>
             <form method="POST" action="/places">
@@ -33,11 +34,17 @@ function new_form () {
                 <label htmlFor="cuisines">Cuisines</label>
                 <input className="form-control" id="cuisines" name="cuisines" required />
               </div>
+              <div className="form-group">
+                <label for="founded">Founded Year</label>
+                <input className="form-control" id="founded" name="founded" />
+                </div>
+
               <input className="btn btn-primary" type="submit" value="Add Place" />
             </form>
 
 
           </main>
+        </div>
         </Def>
     )
 }
