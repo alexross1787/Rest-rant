@@ -4,10 +4,12 @@ const Def  = require('../default');
 const show = (data) => {
     return (
         <Def>
+            <div className="container">
             <main className='row'>
             <div className='col'>
-                    <img src={data.place.pic} alt={data.place.name} style={{ width: '100%', maxWidth: '300px' }} />
-                </div>
+                <div className="img-container ">
+                    <img src={data.place.pic} alt={data.place.name} style={{ width: '100%', maxWidth: '300px', paddingTop: '20px' }} />
+                </div></div>
                 <div className='col'>
                 <h1>
                     {data.place.name}
@@ -18,7 +20,7 @@ const show = (data) => {
                 <div>
                 Located in {data.place.city}, {data.place.state} and serving {data.place.cuisines && ' '} {data.place.cuisines}
                 </div>
-                <a href={`/places/${data.id}/edit`} className="btn btn-warning">
+                <a href={`/places/${data.place.id}/edit`} className="btn btn-warning">
                     Edit
                     </a>
                 <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
@@ -35,6 +37,7 @@ const show = (data) => {
                 
                 </div>
             </main>
+            </div>
         </Def>
     )
 }

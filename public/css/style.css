@@ -7,10 +7,14 @@ body {
   text-align: center;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
 main {
-  margin-right: 20px;
-  margin-left: 20px;
   background-color: white;
+  margin: auto;
 }
 
 
@@ -46,6 +50,10 @@ h1 {
     color: cornflowerblue;
   }
 
+h2 {
+  color: #a3d9e8;
+}
+
   #img-container {
     display: flex;
     justify-content: center;
@@ -59,9 +67,10 @@ h1 {
     text-align: center;
   }
   
+  
 footer {
   flex-shrink: 0;
-  position: sticky;
+  position: absolute;
   bottom: 0px;
   width: 100%;
   background-color: grey;
